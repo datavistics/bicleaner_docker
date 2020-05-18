@@ -46,7 +46,7 @@ RUN apt update \
 #    && rm -rf kenlm \
 #    && apt autoremove -y -q
 
-RUN export PATH="${PATH}:/opt/kenlm/build/bin"
+ENV PATH="${PATH}:/opt/kenlm/build/bin"
 
 
 ################################################################################

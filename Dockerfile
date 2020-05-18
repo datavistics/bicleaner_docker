@@ -53,3 +53,4 @@ RUN git clone https://github.com/bitextor/bicleaner
 
 RUN python3.7 -m pip install https://github.com/kpu/kenlm/archive/master.zip
 RUN python3.7 -m pip install -r tmxt/requirements.txt
+ENV PATH="/opt/kenlm_tools:/opt/bin:/opt/moses_tools:${PATH}"

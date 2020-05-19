@@ -60,4 +60,4 @@ RUN git clone https://github.com/bitextor/bicleaner
 
 RUN /opt/venv/bin/python -m pip install https://github.com/kpu/kenlm/archive/master.zip
 RUN /opt/venv/bin/python -m pip install -r tmxt/requirements.txt
-#ENV PATH="/opt/bin:/opt/moses_tools:${PATH}"
+ADD VERSION .
